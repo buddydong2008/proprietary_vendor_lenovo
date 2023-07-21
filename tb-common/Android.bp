@@ -31,6 +31,7 @@ cc_prebuilt_library_shared {
 		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsdm-disp-vndapis.so"],
+			shared_libs: ["libbinder", "libc++", "libc", "libcutils", "libdl", "liblog", "libm", "libqservice", "libsdmutils", "libutils"]
 		},
 	},
 	compile_multilib: "both",
